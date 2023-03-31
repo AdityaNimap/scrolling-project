@@ -13,7 +13,7 @@ function App() {
   const aboutRef = useRef(null)
   const galleryRef = useRef(null)
   const contactRef = useRef(null)
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState("home");
 
   const refObj = {
     "home": homeRef,
@@ -35,7 +35,7 @@ function App() {
   
   return (
     <div>     
-      <Navbar setActive={setActive}/>
+      <Navbar active={active} setActive={setActive}/>
       <Home homeRef={homeRef}/>
       <About aboutRef={aboutRef}/>
       <Gallery galleryRef={galleryRef}/>
