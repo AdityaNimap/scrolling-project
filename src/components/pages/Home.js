@@ -1,8 +1,8 @@
 import React from 'react'
 import "./style.css";
-const Home = () => {
+const Home = ({homeRef}) => {
     return (
-        <div  className="container" id='/'>
+        <div  className="container" id='/' ref={homeRef} >
             <span class='title'>Home</span>
             <hr/>
            <p className='textstyle'>

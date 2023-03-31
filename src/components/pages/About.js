@@ -1,8 +1,8 @@
 import React from 'react'
 
-const About = () => {
+const About = ({aboutRef}) => {
     return (
-        <div class='containerabout' id='/about'>
+        <div class='containerabout' id='/about' ref={aboutRef}>
           <span class='title'>About</span>
           <hr/>
           <p className='textstyle'>

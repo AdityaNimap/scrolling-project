@@ -1,8 +1,8 @@
 import React from 'react'
 import "./style.css";
-const Gallery  = () => {
+const Gallery  = ({galleryRef}) => {
     return (
-        <div className="gallerycontainer" id='/gallery'>
+        <div className="gallerycontainer" id='/gallery' ref={galleryRef}>
             <span class='title'>Gallery</span>
             <hr />
            <p className='textstyle'>

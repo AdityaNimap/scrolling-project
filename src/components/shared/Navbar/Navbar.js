@@ -1,17 +1,24 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({setActive}) => {
   return (
     <div className='main'>
         <nav className='nav'>
         <span className='logo'>LOGO</span>
         <ul>
-            <li><Link activeClass="active" to='/' spy={true} smooth={true} offset={-40} duration={500} >Home</Link></li>
-            <li><Link activeClass="active" to='/about' spy={true} smooth={true} offset={-40} duration={500}>About</Link></li>
-            <li><Link activeClass="active" to='/gallery' spy={true} smooth={true} offset={-40} duration={500}>Gallery</Link></li>
-            <li><Link activeClass="active" to='/contact' spy={true} smooth={true} offset={-40} duration={500}>Contact</Link></li>
+            <li onClick={()=> {
+              setActive("home")
+            }}>Home</li>
+            <li onClick={()=> {
+              setActive("about")
+            }}>About</li>
+            <li onClick={()=> {
+              setActive("gallery")
+            }}>Gallery</li>
+            <li onClick={()=> {
+              setActive("contact")
+            }}>Contact</li>
         </ul>
         </nav>
     </div>

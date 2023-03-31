@@ -1,8 +1,8 @@
 import React from 'react'
 import "./style.css";
-const Contact   = () => {
+const Contact   = ({contactRef}) => {
     return (
-        <div className="contactcontainer" id='/contact'>
+        <div className="contactcontainer" id='/contact' ref={contactRef}>
             <span class='title'>Contact</span>
             <hr />
            <p className='textstyle'>
