@@ -19,39 +19,8 @@
     /* scroll-margin-top: 600px !important; */
     margin-top: 100px;
   }
-  .container hr{
-    position: absolute;
+  hr{
     width: 50px;
-    left: 40px;
     border-bottom: 4px solid #B0B0B0;
-  }
-  .containerabout hr{
-    position: absolute;
-    width: 50px;
-    left: 40px;
-    border-bottom: 4px solid #B0B0B0;
-  }
-  .containerabout hr{
-    position: absolute;
-    width: 50px;
-    left: 40px;
-    border-bottom: 4px solid #B0B0B0;
-  }
-  .containerabout hr{
-    position: absolute;
-    width: 50px;
-    left: 40px;
-    border-bottom: 4px solid #B0B0B0;
-  }
-  .gallerycontainer hr{
-    position: absolute;
-    width: 50px;
-    left: 40px;
-    border-bottom: 4px solid #B0B0B0;
-  }
-  .contactcontainer hr{
-    position: absolute;
-    width: 50px;
-    left: 40px;
-    border-bottom: 4px solid #B0B0B0;
+    margin-left: 40px;
   }
