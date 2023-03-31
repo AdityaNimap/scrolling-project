@@ -23,11 +23,14 @@ function App() {
   }
 
   useEffect(()=> {
-    active && refObj[active].current.scrollIntoView({
-      behavior: "smooth",
-      block: "end" ,
-      inline: "end"
-    });
+    const headerOffset = 70
+    const elementPosition = active && refObj[active].current.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
   }, [active])
   
   return (
