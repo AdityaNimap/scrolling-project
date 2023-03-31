@@ -47,8 +47,7 @@
     
 }
 
-.active{
-    
+.active, .scroll-active {
     border-bottom: 2px solid green;
 }
 .nav li:hover{
