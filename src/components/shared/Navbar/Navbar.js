@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='main'>
         <nav className='nav'>
-        <div className='site'>ABC</div>
+        <span className='logo'>LOGO</span>
         <ul>
             <li><Link activeClass="active" to='/' spy={true} smooth={true} offset={-40} duration={500} >Home</Link></li>
             <li><Link activeClass="active" to='/about' spy={true} smooth={true} offset={-40} duration={500}>About</Link></li>
