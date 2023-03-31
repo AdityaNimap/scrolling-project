@@ -7,18 +7,24 @@
     top: 0;
 }
 .nav{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    /* align-items: stretch; */
+    align-items: center;
+   
     gap: 2rem;
     padding: 0 1rem;
-    
+    height: 50px;
+    opacity: 0.9;
+    border-bottom: 1px solid #DBDBDC;
+    height: 70px;
 }
-.site{
+.logo{
     font-size: 2rem;
     cursor: pointer;
+    color:#888888;
 }
 .nav ul{
     padding: 0;
@@ -34,11 +40,14 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    
 }
 
-.nav li.active{
-    background-color: green;
+.active{
+    
+    border-bottom: 2px solid green;
 }
 .nav li:hover{
-    background-color: red;
+    transition: 300ms;
+    /* background-color: rgb(62, 58, 58); */
 }

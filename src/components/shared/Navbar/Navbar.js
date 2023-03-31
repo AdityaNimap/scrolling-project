@@ -6,7 +6,7 @@ const Navbar = ({setActive}) => {
   return (
     <div className='main'>
         <nav className='nav'>
-        <div className='site'>ABC</div>
+        <span className='logo'>LOGO</span>
         <ul>
             <li onClick={()=> {
               setActive("home")
